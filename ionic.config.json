@@ -1,0 +1,8 @@
+{
+  "name": "atrial-fibrillation-risk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "7988e53a"
+}
