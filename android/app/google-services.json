@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529747043258",
+    "project_id": "af-stroke-risk",
+    "storage_bucket": "af-stroke-risk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529747043258:android:b3d486aecee37196ea3383",
+        "android_client_info": {
+          "package_name": "com.imedicalapps.atrialfibrillationstrokerisk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529747043258-789rq1s6vkiodsgf4j0698leb414f3v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOpmw1aPkfFBuCdqT28CaQ-YOdHHrHcAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529747043258-789rq1s6vkiodsgf4j0698leb414f3v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

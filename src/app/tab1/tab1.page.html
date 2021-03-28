@@ -1,17 +1,125 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary" class="ion-text-center">
     <ion-title>
-      Tab 1
+      CHA₂DS₂-VASc Score
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card class="color1">
+    <ion-card-content>
+      <ion-item >
+        <ion-radio-group value="q11" (ionChange)="checkq1($event)">
+            <ion-text>Age (years)</ion-text>
+          <ion-item>
+            <ion-text><65</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>65-74</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>≥75</ion-text>
+            <ion-radio slot="start" value="q13"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item>
+        <ion-radio-group value="q12" (ionChange)="checkq2($event)">
+            <ion-text>Gender</ion-text>
+          <ion-item>
+            <ion-text>Female</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>Male</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item>
+        <ion-radio-group value="q12" (ionChange)="checkq3($event)">
+            <ion-text>CHF history</ion-text>
+          <ion-item>
+            <ion-text>Yes</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>No</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item>
+        <ion-radio-group value="q12" (ionChange)="checkq4($event)">
+            <ion-text>Hypertension history</ion-text>
+          <ion-item>
+            <ion-text>Yes</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>No</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item>
+        <ion-radio-group value="q12" (ionChange)="checkq5($event)">
+            <ion-text>Stroke/TIA/thromboembolism history</ion-text>
+          <ion-item>
+            <ion-text>Yes</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>No</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item>
+        <ion-radio-group value="q12" (ionChange)="checkq6($event)">
+            <ion-text>Vascular disease history</ion-text>
+          <ion-item>
+            <ion-text>Yes</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>No</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <p>Prior MI, peripheral artery disease, or aortic plaque</p>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item>
+        <ion-radio-group value="q12" (ionChange)="checkq7($event)">
+            <ion-text>Diabetes history</ion-text>
+          <ion-item>
+            <ion-text>Yes</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-text>No</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      </ion-card-content>
+</ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-card class="ion-text-center" color="primary">
+<div>
+  <p><u><b>Based on CHA₂DS₂-VASc Score</b></u></p>
+  <p>The total score is <b>{{score}} points</b></p>
+  <p><i>Risk of ischemic stroke is {{classification1}}%.</i></p>
+  <p><i>Risk of stroke/TIA/systemic embolism is {{classification2}}%.</i></p>
+</div>
+</ion-card>
 </ion-content>
